@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ViewContainer"
+    android:layout_width="422.4px"
+    android:layout_height="327px"
+    card_view:cardBackgroundColor="#000000"
+    card_view:cardCornerRadius="5px"
+    card_view:cardElevation="5px">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/previewContent"
+            android:layout_width="422.4px"
+            android:layout_height="237.6px"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:cardCornerRadius="5px"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardElevation="0px"
+            card_view:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/previewImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                android:scaleType="fitXY"/>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="400px"
+            android:layout_height="49px"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="top"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="18px"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/previewContent" />
+
+        <TextView
+            android:id="@+id/Author"
+            android:layout_width="400px"
+            android:layout_height="32px"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Author"
+            android:textColor="#939090"
+            android:textSize="18px"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/title" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

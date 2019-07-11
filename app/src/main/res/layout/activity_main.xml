@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eywa_background1"
+    android:orientation="horizontal"
+    tools:context=".MainScreen.MainView">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/VideoRow"
+        android:layout_width="match_parent"
+        android:layout_height="710px"
+        android:layout_marginTop="150px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Bar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/IconRow"
+        android:layout_width="wrap_content"
+        android:layout_height="170px"
+        android:layout_marginStart="285px"
+        android:layout_marginEnd="285px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VideoRow" />
+
+    <TextView
+        android:id="@+id/TimeView"
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center_vertical"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="64px"
+        app:layout_constraintBottom_toTopOf="@+id/VideoRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CurrentWeatherView"
+        style="@style/AppTheme"
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="20 °"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="64px"
+        app:layout_constraintBottom_toTopOf="@+id/VideoRow"
+        app:layout_constraintEnd_toStartOf="@+id/stick" />
+
+    <TextView
+        android:id="@+id/stick"
+        android:layout_width="30px"
+        android:layout_height="150px"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center_vertical"
+        android:text="|"
+        android:textColor="@android:color/white"
+        android:textSize="64px"
+        app:layout_constraintBottom_toTopOf="@+id/VideoRow"
+        app:layout_constraintEnd_toStartOf="@+id/TimeView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/assistantText"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Как приготовить суп минестроне?"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IconRow" />
+
+    <TextView
+        android:id="@+id/ReceivingRecView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получение рекомендаций"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/Bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.androidsample.BottomSheetActivity">
+
+        <!-- подключение элемента app bar -->
+
+        <!-- подключение нижнего экрана -->
+        <include
+            android:id="@+id/AppBar"
+            layout="@layout/app_bar" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>

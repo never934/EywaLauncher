@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="441px"
+    android:layout_height="106px"
+    android:id="@+id/NewsItemContainer">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/foodPreview"
+        android:layout_width="190px"
+        android:layout_height="105px"
+        card_view:cardCornerRadius="5px"
+        card_view:cardElevation="1dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.0" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/previewContent"
+            android:scaleType="centerCrop"/>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="225px"
+        android:layout_height="48px"
+        android:layout_marginStart="6dp"
+        android:fontFamily="sans-serif"
+        android:gravity="top"
+        android:text="foodName"
+        android:textColor="@android:color/black"
+        android:textSize="18px"
+        app:layout_constraintStart_toEndOf="@+id/foodPreview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RestName"
+        android:layout_width="236px"
+        android:layout_height="22px"
+        android:layout_marginStart="6dp"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom"
+        android:text="Restaurant"
+        android:textSize="18px"
+        app:layout_constraintStart_toEndOf="@+id/foodPreview"
+        app:layout_constraintTop_toBottomOf="@+id/foodName" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/orderBtn"
+        android:layout_width="165px"
+        android:layout_height="27px"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="#FDE400"
+        app:cardCornerRadius="5px"
+        app:cardElevation="1px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/foodPreview"
+        app:layout_constraintTop_toTopOf="@+id/RestName">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Заказать"
+            android:fontFamily="sans-serif"
+            android:textSize="18px"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"/>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

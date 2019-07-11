@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rec_fragment"
+    android:layout_width="490px"
+    android:layout_height="670px"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="10px"
+    card_view:cardElevation="5px">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="470px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

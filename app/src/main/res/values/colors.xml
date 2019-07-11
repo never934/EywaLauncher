@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="RecomColor">#13162F</color>
+    <color name="AppIconPressed">#615d5d</color>
+    <color name="AppIconDefault">#242121</color>
+</resources>
